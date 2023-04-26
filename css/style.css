@@ -1,0 +1,182 @@
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 2%;
+    padding: 1%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 40%;
+    opacity: 1;
+  }
+
+/*To include a background image in the page header and make it semi-transparent, you can use the following CSS:*/
+
+header {
+    background-image: url("../image/background.jpg");
+    color: #fff;
+    font-size: 150%;
+    background-size: cover;
+    text-transform: capitalize;
+    text-align: center;
+    background-position: center ;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0.9; /* adjust transparency as needed */
+  }
+  
+/*To create page options that change color and zoom on hover after a small delay, you can use CSS transitions:*/
+nav {
+    position: relative;
+    text-align:justify;
+    color: black;
+    top: 0%;
+    width: 90%;
+    margin: 2%;
+    bottom: 0%;
+    left: auto;
+    right: auto;
+    display: flex;
+    padding: 3%;
+    opacity: 1;
+    justify-content:center;
+    white-space: nowrap;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 1%;
+  }
+
+  nav a {
+    color: black;
+    padding: 0%;
+    text-rendering: auto;
+    font-size: 150%;
+    text-decoration: salmon;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: rgb(25, 15, 15);
+    background-color: aqua;
+    transform: scale(1.2); /* adjust zoom factor as needed */
+    transition-delay: 0.2s; /* adjust delay as needed */
+  }
+
+  section {
+    margin-top: 1%;
+  }
+  main {
+    max-width: 88%;
+    margin: 5% auto;
+    padding: 1%;
+  }
+  
+  h2 {
+    background-color: rgb(244, 196, 48);
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+
+  /*To center a paragraph with justified text, you can use the following CSS:*/
+
+  p {
+    background-size: 120%;
+    text-align: justify;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      display: block;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0;
+      text-align: center;
+    }
+  }
+    
+/*To style a table with proper borders and highlight on hover, you can use the following CSS:*/
+
+  table {
+    border-collapse: collapse;
+    margin: 3% auto;
+    background-color: bisque;
+    align-items: center;
+    table-layout: auto;
+    align-self: center;
+  }
+  
+ table th {
+    border: 1px solid black;
+    padding: 5px;
+    align-content: center;
+    text-decoration: underline;
+  }
+
+  table td{
+    border: 1px solid black;
+    padding: 5px;
+    align-content: center;
+    text-align: center;
+  }
+  
+  table tr:hover {
+    background-color: #c8c578;
+    transform: scale(1.02); /* adjust zoom factor as needed */
+  transition-delay: 0.2s; /* adjust delay as needed */
+}
+table img {
+  max-width:80%;
+  height: auto;
+}
+
+th {
+  pointer-events: none;
+}
+
+/* Style for the gallery container */
+.gallery {
+  display:contents;
+  position: relative;
+  max-width:80%;
+  height: auto;
+}
+
+/* Style for the main image */
+.gallery img {
+  display: block;
+}
+
+/* Style for the other images */
+.gallery .img {
+  position: relative;
+  opacity: 1;;
+}
+
+
+
+
+
+
